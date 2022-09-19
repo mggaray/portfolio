@@ -1,0 +1,98 @@
+:root {
+  --main-bg: #3c3836;
+  --secondary-bg: #fbf1c7;
+  --accent: #83a598;
+  --font-primary: #fbf1c7;
+  --font-secondary: #736a59;
+}
+
+html {
+  margin: 0;
+  padding: 0;
+  border: none;
+  list-style-type: none;
+  font-family: "Montserrat", sans-serif;
+}
+
+.wrapper {
+  display: flex;
+  color: var(--font-primary);
+  background-color: var(--main-bg);
+  align-items: center;
+  flex-direction: column;
+}
+
+.nav-bar {
+  display: flex;
+  flex-direction: row;
+  justify-content: end;
+  margin-top: 0;
+  width: 100%;
+  background-color: #3c3836;
+  margin-bottom: 5%;
+}
+
+ul > a {
+  color: var(--font-primary);
+  list-style-type: none;
+  text-decoration: none;
+}
+
+.horizontal {
+  display: flex;
+  flex-direction: row;
+  padding: 0% 2%;
+}
+
+.primary-info {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  height: 70vh;
+  width: 100%;
+}
+
+h1,
+h2 {
+  margin-bottom: 0;
+  text-align: center;
+}
+
+h1 {
+  font-size: 3rem;
+}
+
+h2 {
+  font-size: 1.5rem;
+  margin-bottom: 5%;
+}
+
+.social-links {
+  display: flex;
+  flex-direction: row;
+  align-self: center;
+  justify-content: center;
+}
+
+.social-links > a {
+  margin: 0 10%;
+  width: 60%;
+}
+
+.svg {
+  height: 100%;
+  transition: 250ms ease-in-out;
+}
+
+.svg:hover {
+  transform: scale(1.5);
+}
+
+.about-me {
+  display: flex;
+  flex-direction: column;
+  height: 60%;
+  padding: 3%;
+  background-color: var(--secondary-bg);
+  color: var(--font-secondary);
+}
