@@ -337,6 +337,12 @@ svg {
   font-weight: bold;
 }
 
+.projects__item__buttons> a > button:hover{
+  transform: scale(1.2);
+  background-color: var(--accent-secondary);
+  color: #d9d9d9;
+}
+
 .footer {
   display: flex;
   flex-direction: column;
@@ -345,7 +351,17 @@ svg {
   padding: 5%;
   color: var(--font-secondary);
   box-shadow: 0px 0px 10px 2px rgba(0, 0, 0, 0.35);
-  z-index: -1;
+}
+
+.footer>p>a{
+  text-decoration: double;
+  color: var(--accent-secondary);
+  font-weight: bold;
+}
+
+.footer>p>a:hover{
+  font-size: 1.2rem;
+  color: var(--accent-secondary);
 }
 
 .hidden {
