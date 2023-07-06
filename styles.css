@@ -313,6 +313,30 @@ svg {
   object-fit: cover;
 }
 
+.projects__item__buttons{
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: center;
+  margin-top:2%
+}
+
+.projects__item__buttons>a{
+  margin:10px;
+}
+
+.projects__item__buttons> a > button{
+  background-color: var(--item-bg);
+  color: var(--font-secondary);
+  border: none;
+  border-radius:5px;
+  margin: 5px;
+  padding:5px 10px;
+  font-size: 0.5rem;
+  text-transform: uppercase;
+  font-weight: bold;
+}
+
 .footer {
   display: flex;
   flex-direction: column;
@@ -360,6 +384,7 @@ svg {
 
   .about-me > p {
     max-width: 80%;
+    font-size: 0.8rem;
   }
 
   .projects {
