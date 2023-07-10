@@ -50,22 +50,58 @@ li {
 
 .nav-bar {
   display: flex;
+  width: 100%;
   flex-direction: row;
-  justify-content: end;
   background-color: #3c3836;
-  margin-top: 0;
   margin-bottom: 5%;
-  margin-right: 15%;
-  align-self: flex-end;
+}
+
+.nav-bar-hidden{
+  display: none;
+  margin: 0;
+  padding: 0;
+  background-color: transparent;
 }
 
 .horizontal {
   display: flex;
   flex-direction: row;
+  justify-content: end;
+  align-self: flex-end;
+  margin-top: 15px;
+}
+
+.lang-selector{
+  align-self: flex-start;
+  margin:15px;
+  margin-right: 50%;
+}
+
+.lang-selector>button{
+  border: none;
+  color: var(--font-primary);
+  background-color: transparent;
+}
+
+.languages{
+  display:none;
+  margin-left: 0;
+  padding: 0;
+  background-color: var(--accent);
+  position:absolute
+}
+
+.show-lang{
+  display:block;
+  margin-top: 5px;
+}
+
+.languages>li{
+  font-size: 0.8rem;
 }
 
 .nav-item {
-  margin: 0% 7%;
+  margin: 0% 15px;
 }
 
 ul>li>a {
@@ -119,6 +155,11 @@ h3 {
 svg {
   height: 10%;
   width: 50%;
+}
+
+.menu{
+  width: 20px;
+  height: 20px;
 }
 
 .logo {
@@ -410,13 +451,72 @@ svg {
   transform: translateX(0);
 }
 
-@media  (min-width: 950px) and (max-width:1200px)  {
- *{font-size: 20px;} 
+@media  (min-width: 1100px) and (max-width:1300px)  {
+ *{
+  font-size: 20px;
+} 
+ .lang-selector{
+  margin-right: 55%;
+ }
 }
 
-@media screen and (max-width: 950px) {
+@media  (min-width: 850px) and (max-width:1100px)  {
+ *{
+    font-size: 20px;
+  } 
+
+ .lang-selector{
+  margin-right: 50%;
+ }
+
+ ul>li>a{
+  font-size: 0.7rem;
+ };
+
+}
+
+@media screen and (max-width: 850px) {
   * {
     font-size: 20px;
+  }
+
+ .lang-selector{
+  margin-right: 60%;
+ }
+
+.languages>li{
+  font-size: 0.7rem;
+}
+  .horizontal{
+    display:none;
+    position: absolute;
+    background-color: var(--accent);
+    flex-direction: column;
+    padding: 0;
+    margin: 0px 0px 0px 75%;
+  }
+
+  .horizontal>li{
+    margin:1px;
+  }
+
+  .nav-bar{
+    height: 150px;
+    justify-content: flex-start;
+    align-items: flex-start;
+  }
+
+  .show-navbar{
+    display: block;
+    margin-top: 20px;
+  }
+
+  .nav-bar-hidden{
+    display: inline; 
+    height: 10%;
+    color: var(--font-primary); 
+    margin: 15px 0px 15px 10%;
+    border: none;
   }
 
   .nav-item {

@@ -31,3 +31,23 @@ projects.forEach((project, i) => {
   project.addEventListener("mouseover", () => blurProjects(project));
   project.addEventListener("mouseout", () => unblur());
 });
+
+
+//show dropdown for languages
+const dropdown = (list, style)=>{
+  list.classList.toggle(style)
+}
+
+let list= document.querySelector(".languages")
+let langbtn =document.querySelector(".lang-button")
+langbtn.addEventListener("click", ()=>dropdown(list,'show-lang'))
+
+
+//show dropdown for links
+let linkList= document.querySelector(".horizontal")
+let linkbtn =document.querySelector(".nav-bar-hidden")
+linkbtn.addEventListener("click", ()=>dropdown(linkList, 'show-navbar'))
+
+const isOverflown = ({ clientWidth, clientHeight, scrollWidth, scrollHeight }) => {
+    return scrollHeight > clientHeight || scrollWidth > clientWidth;
+}

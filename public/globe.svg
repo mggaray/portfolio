@@ -1,0 +1,15 @@
+<?xml version="1.0"?>
+<svg width="72" height="72" xmlns="http://www.w3.org/2000/svg" xmlns:svg="http://www.w3.org/2000/svg" enable-background="new 0 0 72 72" version="1.1" xml:space="preserve">
+ <g class="layer">
+  <title>Layer 1</title>
+  <g fill-opacity="0" id="_xD83C__xDF10_">
+   <circle cx="36" cy="36" fill="#000000" id="svg_1" r="28" stroke="#fbf1c7" stroke-linecap="round" stroke-linejoin="round" stroke-miterlimit="10" stroke-width="2"/>
+   <path d="m36,8l0,56c-8.6,0 -15.5,-12.5 -15.5,-28s6.9,-28 15.5,-28c8.6,0 15.5,12.5 15.5,28s-6.9,28 -15.5,28" fill="#000000" id="svg_2" stroke="#fbf1c7" stroke-linecap="round" stroke-linejoin="round" stroke-miterlimit="10" stroke-width="2"/>
+   <path d="m8,36" fill="#000000" id="svg_3" stroke="#fbf1c7" stroke-linecap="round" stroke-linejoin="round" stroke-miterlimit="10" stroke-width="2"/>
+   <path d="m64,36" fill="#000000" id="svg_4" stroke="#fbf1c7" stroke-linecap="round" stroke-linejoin="round" stroke-miterlimit="10" stroke-width="2"/>
+   <line fill="#000000" id="svg_5" stroke="#fbf1c7" stroke-linecap="round" stroke-linejoin="round" stroke-miterlimit="10" stroke-width="2" x1="64" x2="8" y1="36" y2="36"/>
+   <line fill="#000000" id="svg_6" stroke="#fbf1c7" stroke-linecap="round" stroke-linejoin="round" stroke-miterlimit="10" stroke-width="2" x1="60" x2="12" y1="22" y2="22"/>
+   <line fill="#000000" id="svg_7" stroke="#fbf1c7" stroke-linecap="round" stroke-linejoin="round" stroke-miterlimit="10" stroke-width="2" x1="60" x2="12" y1="50" y2="50"/>
+  </g>
+ </g>
+</svg>
