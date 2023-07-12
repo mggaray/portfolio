@@ -38,16 +38,18 @@ const dropdown = (list, style)=>{
   list.classList.toggle(style)
 }
 
-let list= document.querySelector(".languages")
-let langbtn =document.querySelector(".lang-button")
-langbtn.addEventListener("click", ()=>dropdown(list,'show-lang'))
-
+const languages=document.querySelectorAll(".language")
+languages.forEach((el)=>{el.addEventListener("click", ()=>dropdown(list, 'show-lang'))})
+const languageList= document.querySelector(".languages")
+const langbtn =document.querySelector(".lang-button")
+langbtn.addEventListener("click", ()=>dropdown(languageList,'show-lang'))
+languageList.addEventListener("mouseout", ()=>dropdown(languageList,'show-lang'))
 
 //show dropdown for links
-let linkList= document.querySelector(".horizontal")
-let linkbtn =document.querySelector(".nav-bar-hidden")
+const links=document.querySelectorAll(".link")
+links.forEach((el)=>{el.addEventListener("click", ()=>dropdown(list, 'show-lang'))})
+const linkList= document.querySelector(".horizontal")
+const linkbtn =document.querySelector(".nav-bar-hidden")
 linkbtn.addEventListener("click", ()=>dropdown(linkList, 'show-navbar'))
-
-const isOverflown = ({ clientWidth, clientHeight, scrollWidth, scrollHeight }) => {
-    return scrollHeight > clientHeight || scrollWidth > clientWidth;
-}
+linkList.addEventListener("mouseout", ()=>dropdown(linkList,'show-navbar'))
+linkList.addEventListener("touchend", ()=>dropdown(linkList,'show-navbar'))

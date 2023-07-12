@@ -22,7 +22,6 @@ const getUserLanguage = () => {
     }
 
 getUserLanguage();
-
 const esButton=document.getElementById("es")
 const enButton=document.getElementById("en")
 esButton.addEventListener("click", ()=> translatePage("es"))
