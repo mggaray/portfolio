@@ -5,6 +5,7 @@ const translatePage = (preferedLanguage) => {
         })
         .then((data) => {
             let translations = data;
+            downloadLink.setAttribute("href",`./public/MatiasGaray-${preferedLanguage}.pdf`)
             document.querySelectorAll('[localization]').forEach((element) => {
             let key = element.getAttribute('localization');
             let translation = translations[key];
@@ -13,6 +14,7 @@ const translatePage = (preferedLanguage) => {
     });
 };
 
+const downloadLink=document.getElementById("downloadLink")
 const getUserLanguage = () => {
     let preferedLanguage =navigator.language.toString()
     preferedLanguage.includes('es')? preferedLanguage='es': preferedLanguage='en'
@@ -20,3 +22,8 @@ const getUserLanguage = () => {
     }
 
 getUserLanguage();
+
+const esButton=document.getElementById("es")
+const enButton=document.getElementById("en")
+esButton.addEventListener("click", ()=> translatePage("es"))
+enButton.addEventListener("click", ()=> translatePage("en"))
