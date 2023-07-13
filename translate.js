@@ -5,7 +5,7 @@ const translatePage = (preferedLanguage) => {
         })
         .then((data) => {
             let translations = data;
-            downloadLink.setAttribute("href",`./public/MatiasGaray-${preferedLanguage}.pdf`)
+            downloadLinks.forEach((element)=>{element.setAttribute("href",`./public/MatiasGaray-${preferedLanguage}.pdf`)})
             document.querySelectorAll('[localization]').forEach((element) => {
             let key = element.getAttribute('localization');
             let translation = translations[key];
@@ -14,7 +14,7 @@ const translatePage = (preferedLanguage) => {
     });
 };
 
-const downloadLink=document.getElementById("downloadLink")
+const downloadLinks=document.querySelectorAll("#downloadLink")
 const getUserLanguage = () => {
     let preferedLanguage =navigator.language.toString()
     preferedLanguage.includes('es')? preferedLanguage='es': preferedLanguage='en'

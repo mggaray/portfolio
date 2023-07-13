@@ -39,17 +39,16 @@ const dropdown = (list, style)=>{
 }
 
 const languages=document.querySelectorAll(".language")
-languages.forEach((el)=>{el.addEventListener("click", ()=>dropdown(list, 'show-lang'))})
 const languageList= document.querySelector(".languages")
+languages.forEach((el)=>{el.addEventListener("click", ()=>dropdown(languageList, 'show-lang'))})
 const langbtn =document.querySelector(".lang-button")
 langbtn.addEventListener("click", ()=>dropdown(languageList,'show-lang'))
 languageList.addEventListener("mouseout", ()=>dropdown(languageList,'show-lang'))
 
 //show dropdown for links
 const links=document.querySelectorAll(".link")
-links.forEach((el)=>{el.addEventListener("click", ()=>dropdown(list, 'show-lang'))})
 const linkList= document.querySelector(".horizontal")
+links.forEach((el)=>{el.addEventListener("click", ()=>dropdown(linkList, 'show-navbar'))})
 const linkbtn =document.querySelector(".nav-bar-hidden")
 linkbtn.addEventListener("click", ()=>dropdown(linkList, 'show-navbar'))
 linkList.addEventListener("mouseout", ()=>dropdown(linkList,'show-navbar'))
-linkList.addEventListener("touchend", ()=>dropdown(linkList,'show-navbar'))
