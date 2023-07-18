@@ -32,12 +32,12 @@ projects.forEach((project, i) => {
   project.addEventListener("mouseout", () => unblur());
 });
 
-
-//show dropdown for languages
+//function for dropdown
 const dropdown = (list, style)=>{
   list.classList.toggle(style)
 }
 
+//show dropdown for languages
 const languages=document.querySelectorAll(".language")
 const languageList= document.querySelector(".languages")
 languages.forEach((el)=>{el.addEventListener("click", ()=>dropdown(languageList, 'show-lang'))})
